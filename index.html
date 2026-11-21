@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' blob: https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src data: https://fonts.gstatic.com; img-src 'self' blob: data:; connect-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="robots" content="noindex,nofollow,noarchive"><meta name="referrer" content="no-referrer">
+<title>ML Zero to Hero</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="katex.css">
+<style>html,body{height:100%}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<style id="gatecss">
+:root{--bg:#F3F5FA;--surface:#fff;--ink:#121929;--muted:#5A6477;--line:#D7DDE8;--accent:#2B55E6;--bad:#CF3F3F}
+@media (prefers-color-scheme:dark){:root{--bg:#0C1019;--surface:#141A27;--ink:#E7EBF3;--muted:#93A0B6;--line:#283146;--accent:#7D9CFF;--bad:#FF7C7C;color-scheme:dark}}
+body{background:var(--bg);color:var(--ink);font-family:"Bricolage Grotesque","Avenir Next","Segoe UI",sans-serif}
+#gate{min-height:100%;display:flex;align-items:center;justify-content:center;padding:24px 16px}
+#gateform{width:min(400px,100%);background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:30px 26px;display:flex;flex-direction:column;gap:14px}
+#gate h1{margin:0;font-size:1.7rem;font-weight:800;letter-spacing:-.03em}#gate p{margin:0;color:var(--muted);font-size:.92rem;line-height:1.5}
+#gatepw{font:inherit;font-size:1rem;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink)}
+#gatepw:focus-visible,#gatebtn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+#gatebtn{font:inherit;font-weight:700;padding:12px;border:0;border-radius:10px;background:var(--accent);color:var(--bg);cursor:pointer}#gatebtn:disabled{opacity:.6}
+#gate label.keep{display:flex;gap:8px;align-items:center;font-size:.86rem;color:var(--muted)}
+#gatemsg{min-height:1.3em;font-size:.86rem;color:var(--muted)}#gatemsg.err{color:var(--bad)}
+#gate small{color:var(--muted);font-size:.76rem}#gate a{color:inherit}
+</style></head><body>
+<div id="gate"><form id="gateform" autocomplete="off">
+<h1>ML Zero to Hero</h1>
+<p>This study site is private. Enter the password you were given.</p>
+<input id="gatepw" type="password" aria-label="Password" placeholder="Password" autocomplete="current-password" required>
+<label class="keep"><input type="checkbox" id="gatekeep" checked> Stay unlocked on this device</label>
+<button id="gatebtn">Unlock</button>
+<div id="gatemsg" role="status"></div>
+<small>Made by <a href="https://github.com/BhaveshY" rel="noopener">Bhavesh Yeole</a></small>
+</form></div>
+<script src="gate.js"></script>
+</body></html>
